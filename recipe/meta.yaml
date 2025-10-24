@@ -1,5 +1,5 @@
 {% set name = "pytcube" %}
-{% set version = "0.0.3a3" %}
+{% set version = "0.0.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c21e62cd7c132a903719feecbb24131003836b26818394c32efed7ea89a839a2
+  sha256: 26d330b7d0b3fe328691cb21f17e1c91c623b539d2c2f5d968941e4afb03f4f6
 
 build:
   noarch: python
