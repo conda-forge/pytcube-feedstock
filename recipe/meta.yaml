@@ -1,5 +1,5 @@
 {% set name = "pytcube" %}
-{% set version = "0.0.3" %}
+{% set version = "0.1.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 26d330b7d0b3fe328691cb21f17e1c91c623b539d2c2f5d968941e4afb03f4f6
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 24c79a76c11815275eab43beaee42f4511773388ee769543e00017e469eab26a
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - numpy >=1.26
     - pandas >=2.2
     - xarray >=2024.10.0
-    
+
 test:
   imports:
     - pytcube
